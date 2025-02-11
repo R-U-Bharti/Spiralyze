@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiralyze</title>
+
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/headSection.css">
+
+    <!-- JS Link -->
+    <script src="./scripts/global.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Head Section -->
+    <section id="#home" class="head-section">
+
+        <div class="banner-container">
+            <img src="./assets/banner.png" alt="banner" class="banner-image">
+            <div class="banner-overlay"></div>
+        </div>
+        <img src="./assets/clip.svg" alt="bg-clip" class="clip1">
+        <img src="./assets/clip2.svg" alt="bg-clip2" class="clip2">
+
+        <main class="content">
+
+            <!-- Navbar -->
+            <nav class="navbar">
+                <img src="./assets/logo.png" alt="logo" class="logo">
+
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a style="font-weight: 500; text-decoration: underline;" href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <p class="call-now">
+                        <span>Call Now For Consult</span>
+                        <a href="tel:+1234567890">123.456.7890</a>
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Head Content and Form -->
+            <div class="head-content">
+
+                <div class="head-info">
+                    <h1>
+                        <span id="text-outline" style="--outline: var(--fade-color)">GET AN</span>
+                        <span>INTERVENTION</span>
+                    </h1>
+                    <p>Showing greater respect to older adults can be done in several ways :
+                        acknowledging and putting to use the talents and skills of older adults; creating
+                        intergenerational initiatives; and allowing older adults to stay active and independent
+                        for as long as possible.</p>
+                </div>
+
+                <div class="form-container">
+                    <form id="contact-form" onchange="handleChange">
+
+                        <header>Contact Us</header>
+
+                        <div class="form-wrap">
+                            <div class="input-group">
+                                <input type="text" name="first_name" id="first_name" required
+                                    data-error-message="This field can't be empty. Please fill it in.">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" name="last_name" id="last_name" required
+                                    data-error-message="This field can't be empty. Please fill it in.">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" name="email" id="email" required
+                                    data-error-message="This field can't be empty. Please fill it in.">
+                                <label for="email">Business Email</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" name="company" id="company" required
+                                    data-error-message="This field can't be empty. Please fill it in.">
+                                <label for="company">Company</label>
+                            </div>
+                            <div class="input-group" style="grid-column: span 12/ span 12; position: relative">
+                                <select name="country" id="country" required
+                                    data-error-message="This field can't be empty. Please fill it in.">
+                                    <option value="">Country</option>
+                                    <option value="USA">USA</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; justify-content: center; padding-bottom: 30px;">
+                            <div onclick="handleSubmit(event)" class="form-submit-btn">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.00999999 18L21 9L0.00999999 0L0 7L15 9L0 11L0.00999999 18Z"
+                                        fill="white" />
+                                </svg>
+                                <span>Submit</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+    </section>
+
+</body>
+
+</html>

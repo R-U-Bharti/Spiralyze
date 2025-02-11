@@ -1,0 +1,54 @@
+:root {
+    --text-color: #333;
+    --higlight-color: #5BC8AF;
+    --tip-bg-color: #297C6B;
+    --bg-color: #194D44;
+    --fade-color: #EAEAEA;
+    --error-color: #FF7777;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg-color);
+    border: 3px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 8px;
+    height: 9px;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    text-transform: none;
+    cursor: pointer;
+}
+
+a:focus,
+button:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+#text-outline{
+    font-family: Arial, Helvetica, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--outline) ;
+}
