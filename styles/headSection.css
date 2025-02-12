@@ -244,8 +244,9 @@
     transform: translateY(-5px);
 }
 
-.form-submit-btn:focus {
+.form-submit-btn:active {
     background-color: #35bb9c;
+    transform: translateY(0px);
 }
 
 .error-field {

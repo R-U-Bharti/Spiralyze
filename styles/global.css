@@ -77,9 +77,10 @@ button:focus {
     }
 }
 
+
 @media screen and (max-width: 400px) {
     .section-header {
-        h1{
+        h1 {
             font-size: 1.5rem;
         }
     }
