@@ -16,10 +16,12 @@
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/headSection.css">
     <link rel="stylesheet" href="./styles/blogSection.css">
+    <link rel="stylesheet" href="./styles/testimonialSection.css">
 
     <!-- JS Link -->
     <script src="./scripts/global.js" defer></script>
     <script src="./scripts/form.js" defer></script>
+    <script src="./scripts/testimonial.js" defer></script>
 
 </head>
 
@@ -118,6 +120,7 @@
 
     </section>
 
+    <!-- Blog Section -->
     <section class="content blog-section">
         <div class="image-section">
             <img loading="lazy" src="./assets/group1.png" alt="" srcset="">
@@ -132,23 +135,93 @@
             <div class="horizontal-line"></div>
         </header>
         <div class="blog-desc">
-               <div class="blog-desc-group">
-                 <p>Older adults want to play active and meaningful roles in their lives, including as part of a social network, a neighborhood, and a community. Service providers and policymakers must consider that a lack of sense of purpose can become problematic as people age.  Engaging them in leisure activities and volunteer work is important.</p>
-                <p>Older adults want to stay active and contribute to society in a reciprocal manner (meaning that they want to exchange their services and skills with others for the mutual benefit of the neighborhood or community). 
-                    <span class="min-desc">Qualitative and quantitative studies published from 2005 to 2016 examining the social needs of older adults were eligible for inclusion.</span>
+            <div class="blog-desc-group">
+                <p>Older adults want to play active and meaningful roles in their lives, including as part of a social
+                    network, a neighborhood, and a community. Service providers and policymakers must consider that a
+                    lack of sense of purpose can become problematic as people age. Engaging them in leisure activities
+                    and volunteer work is important.</p>
+                <p>Older adults want to stay active and contribute to society in a reciprocal manner (meaning that they
+                    want to exchange their services and skills with others for the mutual benefit of the neighborhood or
+                    community).
+                    <span class="min-desc">Qualitative and quantitative studies published from 2005 to 2016 examining
+                        the social needs of older adults were eligible for inclusion.</span>
                 </p>
-               </div>
-                <p class="blog-last-desc">
-                    <span class="min-desc"><span class="min-desc">Qualitative and quantitative studies published from 2005 to 2016 examining the social needs of older adults were eligible for inclusion.</span></span>
-                    To stimulate social contacts, neighborhood initiatives can be developed. Social meeting places, such as pubs and churches can help to foster the development of close and peripheral relationships.
+            </div>
+            <p class="blog-last-desc">
+                <span class="min-desc">Qualitative and quantitative studies published from 2005 to 2016 examining the
+                    social needs of older adults were eligible for inclusion.</span>
+                <span style="display: inline;">To stimulate social contacts, neighborhood initiatives can be developed.
+                    Social meeting places, such as pubs and churches can help to foster the development of close and
+                    peripheral relationships.</span>
                 <button class="cta-btn">
                     <span>92% Success Rate</span>
                     <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3431 0.92888L16.7071 6.29284C17.0976 6.68336 17.0976 7.31653 16.7071 7.70705L11.3431 13.071C10.9526 13.4615 10.3195 13.4615 9.92893 13.071C9.53841 12.6805 9.53841 12.0473 9.92893 11.6568L13.5858 7.99995H0V5.99995H13.5858L9.92893 2.34309C9.53841 1.95257 9.53841 1.3194 9.92893 0.92888C10.3195 0.538355 10.9526 0.538355 11.3431 0.92888Z" fill="#5BC8AF"/>
-</svg>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.3431 0.92888L16.7071 6.29284C17.0976 6.68336 17.0976 7.31653 16.7071 7.70705L11.3431 13.071C10.9526 13.4615 10.3195 13.4615 9.92893 13.071C9.53841 12.6805 9.53841 12.0473 9.92893 11.6568L13.5858 7.99995H0V5.99995H13.5858L9.92893 2.34309C9.53841 1.95257 9.53841 1.3194 9.92893 0.92888C10.3195 0.538355 10.9526 0.538355 11.3431 0.92888Z"
+                            fill="#5BC8AF" />
+                    </svg>
                 </button>
-                </p>
+            </p>
         </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="content testimonial-section">
+
+        <div class="testimonial-container">
+            <button class="prev" onclick="prevSlide()">❮</button>
+
+            <div class="testimonial-wrapper">
+            <div class="testimonial-wrapper-inner">
+                <div class="testimonial">
+                    <img src="./assets/test1.png" alt="Testimonial Image">
+                    <div class="testimonial-text">
+                        <h3>
+                            <span>Abbie Harvey</span>
+                           <img src="./assets/aposIcon.png" alt="aposIcon">
+                        </h3>
+                        <i>I have been caring for my mom & dad off and on for about 10 years now, and I know the
+                            importance of me being there for appointments. Older people need attention, love, and care
+                            that they truly deserve.</i>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <img src="./assets/test2.png" alt="Testimonial Image">
+                    <div class="testimonial-text">
+                        <h3>
+                            <span>John Doe</span>
+                            <img src="./assets/aposIcon.png" alt="aposIcon">
+                        </h3>
+                        <i>Providing care for elders has taught me patience and understanding. Their happiness brings
+                            joy to my heart every day.</i>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <img src="./assets/test3.png" alt="Testimonial Image">
+                    <div class="testimonial-text">
+                        <h3>
+                            <span>Emma Watson</span>
+                          <img src="./assets/aposIcon.png" alt="aposIcon">
+                        </h3>
+                        <i>Being a caregiver has been an emotional journey, but seeing them smile makes it all
+                            worthwhile.</i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+            </div>
+
+            <button class="next" onclick="nextSlide()">❯</button>
+
+        </div>
+
     </section>
 
 </body>

@@ -294,7 +294,7 @@
 }
 
 /* Media Queries */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 578px) {
 
     nav {
         margin-bottom: 50px;
@@ -319,7 +319,7 @@
     }
 }
 
-@media only screen and (max-width: 799px) {
+@media screen and (max-width: 799px) {
 
     .head-section {
         padding-bottom: 44vh;
