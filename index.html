@@ -15,10 +15,12 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/headSection.css">
+    <link rel="stylesheet" href="./styles/blogSection.css">
 
     <!-- JS Link -->
     <script src="./scripts/global.js" defer></script>
     <script src="./scripts/form.js" defer></script>
+
 </head>
 
 <body>
@@ -26,18 +28,15 @@
     <!-- Head Section -->
     <section id="#home" class="head-section">
 
-        <div class="banner-container">
-            <img src="./assets/banner.png" alt="banner" class="banner-image">
-            <div class="banner-overlay"></div>
-        </div>
-        <img src="./assets/clip.svg" alt="bg-clip" class="clip1">
-        <img src="./assets/clip2.svg" alt="bg-clip2" class="clip2">
+        <img loading="lazy" src="./assets/clip.svg" alt="bg-clip" class="clip1">
+        <img loading="lazy" src="./assets/clip2.svg" alt="bg-clip2" class="clip2">
 
         <main class="content">
 
             <!-- Navbar -->
             <nav class="navbar">
-                <img src="./assets/logo.png" alt="logo" class="logo">
+                <img loading="lazy" src="./assets/logo.png" alt="logo" class="logo">
+                <img loading="lazy" src="./assets/bar.svg" alt="bar" class="bar">
 
                 <div class="nav-links-container">
                     <ul class="nav-links">
@@ -117,6 +116,21 @@
 
         </main>
 
+    </section>
+
+    <section class="content blog-section">
+        <div class="image-section">
+            <img loading="lazy" src="./assets/group1.png" alt="" srcset="">
+            <img loading="lazy" src="./assets/group2.png" alt="" srcset="">
+            <img loading="lazy" src="./assets/group3.png" alt="" srcset="">
+        </div>
+        <header class="section-header">
+            <h1>
+                <span id="text-outline" style="--outline: var(--text-color)">WE</span>
+                <span>UNDERSTAND</span>
+            </h1>
+            <div class="horizontal-line"></div>
+        </header>
     </section>
 
 </body>

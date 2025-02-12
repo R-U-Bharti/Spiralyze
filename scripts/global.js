@@ -14,7 +14,7 @@ function adjustWidth() {
         let newElem = document.createElement('div');
         newElem.style.maxWidth = '1366px';
         newElem.style.width = '100%';
-        newElem.style.padding = '0 20px';
+        newElem.style.padding = '0 10px';
         newElem.innerHTML = elements;
         elem.appendChild(newElem);
     })
