@@ -2,6 +2,7 @@
     background: white;
     padding: 30px 0;
     position: relative;
+    padding-bottom: 100px;
 }
 
 .testimonial-container {
@@ -30,7 +31,6 @@
 .testimonial {
     flex: 0 0 100%;
     display: flex;
-    align-items: center;
     color: white;
     border-radius: 10px;
     padding: 20px;
@@ -39,7 +39,6 @@
 
 .testimonial img {
     width: 15vw;
-    height: 15vw;
     border-radius: 8px 0px 0px 8px;
     object-fit: cover;
     margin-right: 20px;
@@ -48,10 +47,9 @@
 
 .testimonial-text {
     width: 22%;
-    height: 15vw;
     border-radius: 0px 8px 8px 0px;
     background: var(--bg-color);
-    padding: 25px 30px 30px 30px;
+    padding: 20px 30px 30px 30px;
 }
 
 .testimonial-text h3 {
@@ -93,7 +91,7 @@
 }
 
 .dot.active {
-    background-color: var(--higlight-color);
+    background-color: var(--highlight-color);
 }
 
 .prev,
@@ -118,7 +116,7 @@
 
 .prev:hover,
 .next:hover {
-    color: var(--higlight-color);
+    color: var(--highlight-color);
 }
 
 .prev {
@@ -127,6 +125,174 @@
 
 .next {
     right: 50px;
+}
+
+.test-desc,
+.test-desc-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px 50px;
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+
+.test-desc {
+    width: 100%;
+
+    .test-first {
+        width: 30%;
+        font-size: 0.9rem;
+    }
+}
+
+.test-desc-group {
+    width: 70%;
+}
+
+.test-info-btn {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 20px 50px;
+
+    button {
+        grid-column: span 4/ span 4;
+        position: relative;
+
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: all 0.3s ease;
+        font-weight: 600;
+        font-size: 0.9rem;
+        border: 2px solid var(--highlight-color);
+        outline: none;
+        color: var(--text-color);
+        background-color: transparent;
+        border-radius: 4px;
+        width: 100%;
+        padding: 20px 0px;
+        cursor: pointer;
+    }
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 5%;
+    width: 90%;
+    padding: 15px;
+    font-weight: 400;
+    background-color: var(--tip-bg-color);
+    color: var(--fade-color);
+    font-size: 0.8em;
+    z-index: 999;
+    border-radius: 8px;
+}
+
+.test-info-btn {
+    button:hover {
+        color: var(--highlight-color);
+        position: relative;
+
+        .tooltip {
+            display: block !important;
+        }
+    }
+
+    button:hover::after {
+        content: 'i';
+        font-size: 10px;
+        padding: 2px 6px;
+        border: 1px solid var(--highlight-color);
+        border-radius: 100%;
+    }
+}
+
+.tooltip:after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: var(--tip-bg-color);
+    top: -2.5px;
+    left: 47%;
+    rotate: 45deg;
+    z-index: -10;
+}
+
+@media screen and (max-width: 400px) {
+
+    .testimonial-container {
+        transform: none !important;
+        z-index: 999;
+    }
+
+    .testimonial-wrapper {
+        width: 100% !important;
+        height: 50vh;
+
+    }
+
+    .testimonial-wrapper-inner {
+        padding-top: 10vh;
+    }
+
+    .testimonial {
+        position: relative;
+    }
+
+    .testimonial img {
+        position: absolute;
+        transform: translate(15%, -66%);
+        width: 40vw;
+        height: 40vw;
+        border-radius: 8px 8px 0px 0px;
+        z-index: 999 !important;
+    }
+
+    .testimonial-text {
+        position: relative;
+        width: 30% !important;
+        height: max-content;
+        padding: 15px !important;
+        border-radius: 8px !important;
+    }
+
+    .testimonial-text::before {
+        content: '';
+        display: block;
+        position: relative;
+        height: 12vh;
+        width: 100%;
+    }
+
+    .testimonial-text img {
+        position: absolute;
+        width: 15vw;
+        top: 41%;
+        right: 2%;
+    }
+
+    .dots {
+        margin-top: 0px;
+    }
+
+    .test-desc-group {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .test-info-btn{
+        gap: 20px 0px !important;
+    }
+
+    .test-info-btn>button {
+        grid-column: span 12/ span 12 !important;
+    }
 }
 
 @media screen and (max-width: 799px) {
@@ -159,5 +325,25 @@
         line-height: 1px !important;
         font-weight: 400;
         color: var(--fade-color);
+    }
+
+    .test-desc {
+        flex-direction: column;
+    }
+
+    .test-desc {
+        width: 100%;
+
+        .test-first {
+            width: 100%;
+        }
+    }
+
+    .test-desc-group {
+        width: 100%;
+    }
+
+    .test-info-btn>button {
+        grid-column: span 6/ span 6;
     }
 }

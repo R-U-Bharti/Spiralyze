@@ -67,9 +67,10 @@
     transition: all 0.3s ease;
     font-weight: 600;
     font-size: 1.1em;
-    border: 2px solid var(--higlight-color);
+    background-color: transparent;
+    border: 2px solid var(--highlight-color);
     outline: none;
-    color: var(--higlight-color);
+    color: var(--highlight-color);
     letter-spacing: 0.3px;
     border-radius: 4px;
     width: 100%;

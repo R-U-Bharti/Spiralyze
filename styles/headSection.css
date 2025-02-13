@@ -91,7 +91,7 @@
         }
 
         a {
-            color: var(--higlight-color);
+            color: var(--highlight-color);
             text-decoration: none;
         }
     }
@@ -228,7 +228,7 @@
     transition: all 0.3s ease;
     font-weight: 600;
     font-size: 1.1em;
-    background-color: var(--higlight-color);
+    background-color: var(--highlight-color);
     outline: none;
     border: none;
     color: white;

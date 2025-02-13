@@ -17,11 +17,13 @@
     <link rel="stylesheet" href="./styles/headSection.css">
     <link rel="stylesheet" href="./styles/blogSection.css">
     <link rel="stylesheet" href="./styles/testimonialSection.css">
+    <link rel="stylesheet" href="./styles/videoSection.css">
 
     <!-- JS Link -->
     <script src="./scripts/global.js" defer></script>
     <script src="./scripts/form.js" defer></script>
     <script src="./scripts/testimonial.js" defer></script>
+    <script src="./scripts/dialog.js" defer></script>
 
 </head>
 
@@ -172,57 +174,199 @@
             <button class="prev" onclick="prevSlide()">❮</button>
 
             <div class="testimonial-wrapper">
-            <div class="testimonial-wrapper-inner">
-                <div class="testimonial">
-                    <img src="./assets/test1.png" alt="Testimonial Image">
-                    <div class="testimonial-text">
-                        <h3>
-                            <span>Abbie Harvey</span>
-                           <img src="./assets/aposIcon.png" alt="aposIcon">
-                        </h3>
-                        <i>I have been caring for my mom & dad off and on for about 10 years now, and I know the
-                            importance of me being there for appointments. Older people need attention, love, and care
-                            that they truly deserve.</i>
+                <div class="testimonial-wrapper-inner">
+                    <div class="testimonial">
+                        <img src="./assets/test1.png" alt="Testimonial Image">
+                        <div class="testimonial-text">
+                            <h3>
+                                <span>Abbie Harvey</span>
+                                <img src="./assets/aposIcon.png" alt="aposIcon">
+                            </h3>
+                            <i>I have been caring for my mom & dad off and on for about 10 years now, and I know the
+                                importance of me being there for appointments. Older people need attention, love, and
+                                care
+                                that they truly deserve.</i>
+                        </div>
                     </div>
-                </div>
 
-                <div class="testimonial">
-                    <img src="./assets/test2.png" alt="Testimonial Image">
-                    <div class="testimonial-text">
-                        <h3>
-                            <span>John Doe</span>
-                            <img src="./assets/aposIcon.png" alt="aposIcon">
-                        </h3>
-                        <i>Providing care for elders has taught me patience and understanding. Their happiness brings
-                            joy to my heart every day.</i>
+                    <div class="testimonial">
+                        <img src="./assets/test2.png" alt="Testimonial Image">
+                        <div class="testimonial-text">
+                            <h3>
+                                <span>John Doe</span>
+                                <img src="./assets/aposIcon.png" alt="aposIcon">
+                            </h3>
+                            <i>Providing care for elders has taught me patience and understanding. Their happiness
+                                brings
+                                joy to my heart every day.</i>
+                        </div>
                     </div>
-                </div>
 
-                <div class="testimonial">
-                    <img src="./assets/test3.png" alt="Testimonial Image">
-                    <div class="testimonial-text">
-                        <h3>
-                            <span>Emma Watson</span>
-                          <img src="./assets/aposIcon.png" alt="aposIcon">
-                        </h3>
-                        <i>Being a caregiver has been an emotional journey, but seeing them smile makes it all
-                            worthwhile.</i>
+                    <div class="testimonial">
+                        <img src="./assets/test3.png" alt="Testimonial Image">
+                        <div class="testimonial-text">
+                            <h3>
+                                <span>Emma Watson</span>
+                                <img src="./assets/aposIcon.png" alt="aposIcon">
+                            </h3>
+                            <i>Being a caregiver has been an emotional journey, but seeing them smile makes it all
+                                worthwhile.</i>
+                        </div>
                     </div>
-                </div>
 
-            </div>
-            <div class="dots">
-                <span class="dot active" onclick="goToSlide(0)"></span>
-                <span class="dot" onclick="goToSlide(1)"></span>
-                <span class="dot" onclick="goToSlide(2)"></span>
-            </div>
+                </div>
+                <div class="dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                </div>
             </div>
 
             <button class="next" onclick="nextSlide()">❯</button>
 
         </div>
 
+        <header class="section-header">
+            <h1>
+                <span id="text-outline" style="--outline: var(--text-color)">WE</span>
+                <span>CAN ORGANIZE EVERYTHING</span>
+            </h1>
+            <div class="horizontal-line"></div>
+        </header>
+
+        <div class="test-desc">
+            <p class="test-first" style="font-style: italic ;">
+                <strong>Interventions</strong> should focus on older adult&apos;s desire for connectedness,
+                participation and
+                independence.
+            </p>
+            <div class="test-desc-group">
+                <p>Loneliness and social isolation are growing public health concerns in our aging society. Whilst these
+                    experiences occur across the life span, 50% of individuals aged over 60 are at risk of social
+                    isolation and one-third will experience some degree of loneliness later in life. It is vital to
+                    reduce loneliness and social isolation among older adults.</p>
+                <p>The methodology framework proposed by Asked and O&apos;Malley and further developed by Levac, et al.
+                    was
+                    used to guide the scoping review process. A total of 33 reviews met the inclusion criteria,
+                    evaluating a range of interventions targeted at older people residing in the community or
+                    institutionalised settings. </p>
+            </div>
+        </div>
+
+        <div class="test-info-btn">
+            <button>Needs Assessment
+                <p class="tooltip">We&apos;re experienced in our individual crafts and understand how each one of our
+                    roles impacts your plan holistically.</p>
+            </button>
+            <button>Treatment Planning & Placement
+                <p class="tooltip">We&apos;re experienced in our individual crafts and understand how each one of our
+                    roles impacts your plan holistically.</p>
+            </button>
+            <button>Transportation & Logistics
+                <p class="tooltip">We&apos;re experienced in our individual crafts and understand how each one of our
+                    roles impacts your plan holistically.</p>
+            </button>
+            <button>Insurance Advocacy
+                <p class="tooltip">We&apos;re experienced in our individual crafts and understand how each one of our
+                    roles impacts your plan holistically.</p>
+            </button>
+            <button>Employment Advocacy
+                <p class="tooltip">We&apos;re experienced in our individual crafts and understand how each one of our
+                    roles impacts your plan holistically.</p>
+            </button>
+            <button>Aftercare Planning
+                <p class="tooltip">We&apos;re experienced in our individual crafts and understand how each one of our
+                    roles impacts your plan holistically.</p>
+            </button>
+        </div>
+
     </section>
+
+    <section class="video-section">
+        <div class="video-section-background" style="z-index: 0;">
+            <img src="./assets/videoRect2.svg" alt="video-content-bg" class="video-content-bg" srcset="">
+            <img src="./assets/videoRect.svg" alt="video-content-clip" class="video-content-clip" srcset="">
+        </div>
+
+        <!-- <div class="content"> -->
+            <div class="video-content-wrapper">
+                <div class="video-content">
+                    <header>
+                        <span id="text-outline" style="--outline: var(--fade-color)">WATCH</span>
+                        THE VIDEO
+                    </header>
+
+                    <div class="info">
+                        <div class="info-card">
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.6 10.6L1.4 6.4L0 7.8L5.6 13.4L17.6 1.4L16.2 0L5.6 10.6Z" fill="#5BC8AF" />
+                            </svg>
+
+                            <div class="info-card-details">
+                                <h3>Needs Assessment</h3>
+                                <p>The Advocacy Evaluation Toolkit contains the instruments used to collect data for
+                                    evaluating the Consumer Voices for Coverage program.</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.6 10.6L1.4 6.4L0 7.8L5.6 13.4L17.6 1.4L16.2 0L5.6 10.6Z" fill="#5BC8AF" />
+                            </svg>
+
+                            <div class="info-card-details">
+                                <h3>Insurance Advocacy</h3>
+                                <p>We are committed to advocating for appropriate coverage and payment policies.</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.6 10.6L1.4 6.4L0 7.8L5.6 13.4L17.6 1.4L16.2 0L5.6 10.6Z" fill="#5BC8AF" />
+                            </svg>
+
+                            <div class="info-card-details">
+                                <h3>Treatment Planning & Placement</h3>
+                                <p>Patients can better understand medical procedures, discharge instructions, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-content">
+
+                    <img src="./assets/logo.png" alt="logo" class="logo-corner" >
+                    <div onclick="showDialog()" class="play-btn-wrapper">
+                        <div class="play-btn">
+                            <svg width="30" height="30" viewBox="0 0 40 45" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M37.6192 19.3543C40.2859 20.8939 40.2859 24.7429 37.6192 26.2825L6.4939 44.2528C3.82723 45.7924 0.493896 43.8679 0.493896 40.7887L0.493898 4.84819C0.493898 1.76899 3.82723 -0.155511 6.4939 1.38409L37.6192 19.3543Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+
+    </section>
+
+<dialog>
+    <div class="video-container">
+  <div class="video-wrap">
+    <video controls>
+  <source src="./assets/video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+    <div>
+      <button class="close-btn" onclick="closeDialog()">Close</button>
+    </div>
+  </div>
+  </div>
+</dialog>
+
 
 </body>
 
