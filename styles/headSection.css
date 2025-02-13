@@ -319,10 +319,11 @@
     }
 }
 
+
 @media screen and (max-width: 799px) {
 
     .head-section {
-        padding-bottom: 44vh;
+        padding-bottom: 20vh;
     }
 
     .clip1,
@@ -371,4 +372,8 @@
     }
 }
 
-@media (min-width: 800px) and (max-width: 1440px) {}
+@media screen and (max-width: 400px) {
+    .head-section {
+        padding-bottom: 44vh !important;
+    }
+}
